@@ -17,8 +17,40 @@ Use else condition to display that third variable is largest among all the varia
 stop
 
 ## Program:
+```
+using System;
 
+namespace ConsoleApp1
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            int num1,num2,num3;
+            Console.WriteLine("Enter the Number 1: ");
+            num1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the Number 2: ");
+            num2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the Number 3: ");
+            num3 = Convert.ToInt32(Console.ReadLine());
+            if(num1> num2 && num1>num3)
+            {
+                Console.WriteLine("Number 1 is Greatest");
+            }
+            else if(num2>num3 && num2>num3)
+            {
+                Console.WriteLine("Number 2 is Greatest");
+            }
+            else
+            {
+                Console.WriteLine("Number 3 is Greatest");
+            }
+        }
+    }
+}
+```
 ## Output:
-
+![output](Output.png)
 ## Result:
 Thus the C# program to find the largest of three numbers is executed successfully
